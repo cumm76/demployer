@@ -7,6 +7,6 @@ RUN apt install python3 -y
 RUN apt install python3-pip -y
 RUN git clone https://github.com/hsjsa/magneto-for-group
 RUN ls
-RUN cd magneto-for-group && cp -rf * .
+RUN cd magneto-for-group
 RUN pip3 install -r requirements.txt
 RUN ./start.sh
