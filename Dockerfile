@@ -9,7 +9,7 @@ RUN apt install python3-pip -y
 RUN git clone https://github.com/hsjsa/magneto-for-group.git .
 RUN pip3 install -r requirements.txt
 RUN apt-get install libmagic-dev -y
-RUN pip3 install python-libmagic
+RUN pip3 install libmagic
 RUN ls
 COPY . .
 CMD ["bash","fuck.sh"]
