@@ -1,12 +1,9 @@
-FROM ubuntu:22.04
-WORKDIR /usr/src/app
-RUN apt update -y && \
-    apt upgrade -y && \
-    apt install git -y 
-RUN apt install aria2 wget curl -y
+FROM ghcr.io/hsjsa/ubuntu:main
+WORKDIR /usr/src/app 
+RUN apt install wget curl -y
 RUN apt install python3 -y
 RUN apt install python3-pip -y
-RUN git clone https://github.com/hsjsa/magneto-for-group.git .
+RUN git clone https://github.com/hsjsa/merrow.git .
 RUN pip3 install -r requirements.txt
 RUN apt-get install libmagic-dev -y
 RUN pip3 install libmagic
