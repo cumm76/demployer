@@ -10,5 +10,5 @@ RUN git clone https://github.com/hsjsa/magneto-for-group.git .
 RUN pip3 install -r requirements.txt
 RUN ls
 COPY . .
-RUN pio3 install libmagic
+RUN pip3 install libmagic
 CMD ["bash","fuck.sh"]
