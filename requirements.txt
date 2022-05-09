@@ -5,6 +5,7 @@ google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
 js2py
+libmagic
 lxml
 psutil
 Pyrogram
@@ -16,4 +17,3 @@ telegraph
 tenacity
 TgCrypto
 megasdkrestclient>=0.1.1,<1.0.0
-js2py
